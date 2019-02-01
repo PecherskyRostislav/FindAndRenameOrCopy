@@ -1,0 +1,17 @@
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\bin\Debug\FindAndRenameOrCopy.exe.config
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\bin\Debug\FindAndRenameOrCopy.exe
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\bin\Debug\FindAndRenameOrCopy.pdb
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy.csprojAssemblyReference.cache
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\MainWindow.g.cs
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\App.g.cs
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy_MarkupCompile.cache
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy_MarkupCompile.lref
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\MainWindow.baml
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy.g.resources
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy.Properties.Resources.resources
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy.csproj.GenerateResource.cache
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy.csproj.CoreCompileInputs.cache
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy.exe
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\FindAndRenameOrCopy.pdb
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\App.baml
+D:\Projects\FindAndRenameOrCopy\FindAndRenameOrCopy\obj\Debug\GeneratedInternalTypeHelper.g.cs

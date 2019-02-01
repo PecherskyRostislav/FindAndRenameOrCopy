@@ -1,0 +1,97 @@
+﻿<Window x:Class="FindAndRenameOrCopy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FindAndRenameOrCopy"
+        mc:Ignorable="d"
+        Title="Работа с файлами изображений" 
+        Height="Auto" 
+        Width="400" 
+        SizeToContent="Height"
+        ResizeMode="NoResize"
+        Background="MintCream"
+        WindowStartupLocation="CenterScreen"
+        >
+    
+    <Window.DataContext>
+        <local:MainVM />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BtnBase}">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Verdana" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="Background" Value="ForestGreen" />
+        </Style>        
+    </Window.Resources>
+    
+    <Grid Height="Auto" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" 
+                    Content="Перемещать" 
+                    Margin="0,3,0,3"
+                    Command="{Binding ActivateModeMove}"/>
+            <Button Grid.Column="1" 
+                    Content="Копировать"
+                    Background="Goldenrod"
+                    Command="{Binding ActivateModeCopy}"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="Каталог для поиска:" />
+            
+            <DockPanel Grid.Row="1">
+                <Button Content="Обзор" 
+                        DockPanel.Dock="Right"
+                        Background="{Binding CurrentColor}"
+                        Command="{Binding OpenDialgToFind}"/>
+                <TextBox Text="{Binding FolderToFind}" />                
+            </DockPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <TextBlock Text="Каталог для " />
+                <TextBlock Text="{Binding DopLblName}" />
+                <TextBlock Text=":" />
+            </StackPanel>
+            
+            
+            <DockPanel Grid.Row="3">
+                <Button Content="Обзор" 
+                        DockPanel.Dock="Right"
+                        Background="{Binding CurrentColor}"
+                        Command="{Binding OpenDialgToMoveCopy}" />
+                <TextBox Text="{Binding FolderToMoveCopy}" />                
+            </DockPanel>
+
+            <DockPanel Grid.Row="4">
+                <Button Content="{Binding ExecBtnName}" 
+                        Command="{Binding ExecuteCommand}"
+                        DockPanel.Dock="Right"
+                        Background="{Binding CurrentColor}"/>
+                <ProgressBar Margin="0,3,0,3"
+                             Value="{Binding CurrentPosition}"
+                             Maximum="{Binding CountItems}" />                
+            </DockPanel>
+            
+        </Grid>        
+    </Grid>
+</Window>
